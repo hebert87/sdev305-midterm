@@ -1,12 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Vacation Booking</title>
+  <title>Vacation Booking Form</title>
+  <link rel="icon" href="../public/images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../public/styles/styles.css">
+  <script src="../public/js/vacation.js" defer></script>
 </head>
 <body>
-  <h1>Booking Your Dream Vacation</h1>
 
-  <script src="/js/script.js"></script>
+  <form id="Appointment" action="submit-order" method="post">
+    <div class="banner">
+      <img src="https://bit.ly/305-vacation" alt="Vacation Banner">
+      <h1>Book Your Dream Vacation</h1>
+    </div>
+
+    <fieldset>
+      <label for="destination">Destination:</label>
+      <select id="destination" name="destination">
+        <option value="">-- Choose a Destination --</option>
+        <option value="Hawaii">Hawaii</option>
+        <option value="Paris">Paris</option>
+        <option value="Tokyo">Tokyo</option>
+        <option value="Mexico">Mexico</option>
+        <option value="New York">New York</option>
+      </select>
+
+      <div class="grid-two">
+        <div>
+          <label for="date">Departure Date:</label>
+          <input type="date" id="date" name="date">
+        </div>
+        <div>
+          <label for="travelers">Number of Travelers:</label>
+          <input type="number" id="travelers" name="travelers" min="1" value="1">
+        </div>
+      </div>
+
+      <button type="submit" id="book-btn">Find My Vacation</button>
+    </fieldset>
+  </form>
+
+  <footer>
+  <p>GitHub Repository: <a href="https://github.com/jessicahebert/sdev305-midterm" target="_blank">
+  https://github.com/jessicahebert/sdev305-midterm</a></p>
+</footer>
+
+
 </body>
 </html>
