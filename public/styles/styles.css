@@ -102,6 +102,27 @@ footer a {
     color: white;
     text-decoration: underline;
 }
+.error {
+    display: none;
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+.thankyou-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #6d3c91;
+    text-align: center;
+}
+
+.thankyou-container h1 {
+    color: white;
+    font-size: 2rem;
+}
+
 
 @media (max-width: 480px) {
     form#Appointment {

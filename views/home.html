@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <title>Vacation Booking Form</title>
-  <link rel="icon" href="../public/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="../public/images/favicon.jpg" type="image/x-icon">
   <link rel="stylesheet" href="../public/styles/styles.css">
   <script src="../public/js/vacation.js" defer></script>
 </head>
 <body>
 
-  <form id="Appointment" action="submit-order" method="post">
-    <div class="banner">
+<form id="Appointment" action="thanks.html">   
+  <div class="banner">
       <img src="https://bit.ly/305-vacation" alt="Vacation Banner">
       <h1>Book Your Dream Vacation</h1>
     </div>
@@ -25,12 +25,16 @@
         <option value="Mexico">Mexico</option>
         <option value="New York">New York</option>
       </select>
+      <span class="error" id="err-destination">Please select a destination.</span>
+
 
       <div class="grid-two">
         <div>
           <label for="date">Departure Date:</label>
           <input type="date" id="date" name="date">
+          <span class="error" id="err-travelers">Number of travelers must be greater than 0.</span>
         </div>
+        
         <div>
           <label for="travelers">Number of Travelers:</label>
           <input type="number" id="travelers" name="travelers" min="1" value="1">
